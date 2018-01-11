@@ -5,12 +5,12 @@ import java.util.Scanner;
 
 public class Tester {
     public static void main(String[] args) {
-        Scanner reader = new Scanner(new File("GettysburgAddress"))
+        //Scanner reader = new Scanner(new File("GettysburgAddress"))
         //while{
             int syllables = 0;
             ArrayList<String> vowels = new ArrayList<String>();
             vowels.addAll(Arrays.asList("a", "e", "i", "o", "u", "y"));
-            String test = "pneumonoultramicroscopicsilicovolcanoconiosis";
+            String test = "water";
             for (int i = 0; i<test.length(); i++){
                 for (int j = 0; j<vowels.size(); j++){
                     if (vowels.get(j).charAt(0)==(test.charAt(i))){
@@ -29,7 +29,7 @@ public class Tester {
                 if(test.charAt(test.length()-2)== 'l'){
 
                 }else {
-                    //System.out.println("count");
+                    System.out.println("count");
                     syllables--;
                 }
             }
